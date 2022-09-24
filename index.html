@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Millenium Bank apply form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <main>
+    <div id="firstHalf">
+      <div id="firstWrapper">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/YcPnN2f/milleniumbanklogosmall2.png" id="logo" alt="milleniumbanklogosmall2" border="0"></a>
+        <hr>
+        <h1 id="title">Welcome to Millenium Bank</h1>
+        <h2 id="description" style="font-size: 20px;">The new generation of online banking</h2>
+        <div id="products">
+          <div></div>
+          <div></div>
+
+        </div>
+
+        <div id="marketing">
+          <h2>Our values</h2>
+          <p>
+            With your account always at the tip of your fingers,
+            on your smartphone, tablet, laptop or smartwatch, you're always in charge.
+
+            <hr>
+
+            We're a client-driven bank, who prioritizes technological safety as well as maximum efficiency in order to build solid trust.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="secondHalf">
+      <div id="secondWrapper">
+        <form id="survey-form">
+          <div>
+            <input class="form-style" id="birthName" type="text" required placeholder="Birth name">
+            <br>
+            <input class="form-style" id="useName" type="text" required placeholder="Married or preferred name">
+            <br>
+            <input class="form-style" id="firstName" type="text" required placeholder="First name"> <br>
+
+            <input class="form-style" id="email" type="email" required placeholder="E-mail"> <br>
+            <input class="form-style" id="emailConf" type="email" required placeholder="E-mail confirmation"> <br>
+
+            <input class="form-style" id="dateOfBirth" type="date" required placeholder="Date of birth" min="6" max="99"> <br>
+          </div>
+          <div id="radioQuestions">
+            <h3>What kind of account do you wish to open ?</h3>
+            <div class="questionBox">
+              <input type="radio" id="answer1input" name="account" value="individual" class="radio-button" checked> <label id="answer1" for="answer1input" />
+              Individual
+              </label>
+              <input type="radio" id="answer2input" name="account" value="joint" class="radio-button" /> <label id="answer2" for="answer2input">
+                Joint
+              </label>
+
+            </div>
+
+            <h3>Are you already a client ?</h3>
+            <div class="questionBox">
+              <input type="radio" id="answer3input" name="isClient" value="yes" class="radio-button" checked /> <label id="answer3" for="answer3input">
+
+                Yes
+              </label>
+              <input type="radio" id="answer4input" name="isClient" value="no" class="radio-button" /><label id="answer4" for="answer4input">
+                No
+              </label>
+
+            </div>
+          </div>
+
+          <div >
+            <h3>By what medias do you wish to receive commercial offers on our products and services :</h3>
+          <div id="checkboxDiv" class="">
+              <input type="checkbox" name="mediaOffer" value="email" class="checkbox-button" id="emailOffer" checked/>  <label for="emailOffer">Email
+            </label>
+            
+              <input type="checkbox" name="mediaOffer" value="text-messages" id="textOffer" class="checkbox-button"/><label for="textOffer">Text messages
+            </label>
+            
+              <input type="checkbox" name="mediaOffer" value="mail" class="checkbox-button" id="mailOffer" /><label for="mailOffer">Mail
+            </label>
+            </div>
+          </div>
+
+          <div id="validButton">
+            <button>OPEN AN ACCOUNT</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  <script  src="./script.js"></script>
+</html>
